@@ -38,7 +38,7 @@ const Confirm: React.FC = ( ) => {
                         </div>
                         <div className="flex flex-col justify-center items-center">
                             <div className="flex flex-col">
-                                <input className="mb-8 text-center text-2xl font-bold bg-[#9EE56E] bg-opacity-25 mb-3 w-[270px] h-[60px] rounded text-lg pl-2" type="text" id="kodeverifikasi" name="kodeverifikasi" placeholder="  Input Kode" maxLength="6"></input>
+                                <input className="mb-8 text-center text-2xl font-bold bg-[#9EE56E] bg-opacity-25 mb-3 w-[270px] h-[60px] rounded text-lg pl-2" type="text" id="kodeverifikasi" name="kodeverifikasi" placeholder="  Input Kode" maxLength=6></input>
                             </div> 
                         </div>
                         <div className="flex justify-center">
