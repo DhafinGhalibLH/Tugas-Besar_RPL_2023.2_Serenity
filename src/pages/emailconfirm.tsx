@@ -5,6 +5,7 @@ import Router from 'next/router';
 
 const montserrat = Montserrat({ subsets : ['latin']})
 const Confirm: React.FC = ( ) => {
+
     function handleButtonToRegister(){
         Router.push('/register');
     }
@@ -16,7 +17,7 @@ const Confirm: React.FC = ( ) => {
     return (
         <div className={montserrat.className}>
             <div className="h-screen w-screen bg-[#FBF5E5] flex flex-col justify-center items-center">
-                <div className="box-content h-[520px] w-[460px] bg-white flex flex-col justify-center items-center">
+                    <div className="box-content h-[520px] w-[460px] bg-white flex flex-col justify-center items-center">
                         <div className="mb-5 justify-center">
                         <Image src="/images/envelope.png" alt="envelope" width={70} height={70} />
                         </div>
@@ -38,7 +39,7 @@ const Confirm: React.FC = ( ) => {
                         </div>
                         <div className="flex flex-col justify-center items-center">
                             <div className="flex flex-col">
-                                <input className="mb-8 text-center text-2xl font-bold bg-[#9EE56E] bg-opacity-25 mb-3 w-[270px] h-[60px] rounded text-lg pl-2" type="text" id="kodeverifikasi" name="kodeverifikasi" placeholder="  Input Kode" maxLength=6></input>
+                                <input className="mb-8 text-center text-2xl font-bold bg-[#9EE56E] bg-opacity-25 mb-3 w-[270px] h-[60px] rounded text-lg pl-2" type="text" id="kodeverifikasi" name="kodeverifikasi" placeholder="  Input Kode" maxLength={6}></input>
                             </div> 
                         </div>
                         <div className="flex justify-center">
@@ -54,14 +55,14 @@ const Confirm: React.FC = ( ) => {
                                 Ubah email
                             </button>
                         </div>            
-                </div>
-                <div className="flex justify-center mt-10">
-                    <button onClick={handleButtonToRegister} className="h-[37px] w-[400px] text-black font-bold">
-                        KEMBALI KE LAMAN SEBELUMNYA
-                    </button>
+                    </div>
+                    <div className="flex justify-center mt-10">
+                        <button onClick={handleButtonToRegister} className="h-[37px] w-[400px] text-black font-bold">
+                            KEMBALI KE LAMAN SEBELUMNYA
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
     )
 }
 
