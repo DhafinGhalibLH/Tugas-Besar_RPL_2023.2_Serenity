@@ -5,7 +5,6 @@ import Router from 'next/router';
 
 const montserrat = Montserrat({ subsets : ['latin']})
 const Confirm: React.FC = ( ) => {
-
     function handleButtonToRegister(){
         Router.push('/register');
     }
