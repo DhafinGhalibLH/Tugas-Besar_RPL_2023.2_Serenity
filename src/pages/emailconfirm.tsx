@@ -16,7 +16,7 @@ const Confirm: React.FC = ( ) => {
     return (
         <div className={montserrat.className}>
             <div className="h-screen w-screen bg-[#FBF5E5] flex flex-col justify-center items-center">
-                    <div className="box-content h-[520px] w-[460px] bg-white flex flex-col justify-center items-center">
+                <div className="box-content h-[520px] w-[460px] bg-white flex flex-col justify-center items-center">
                         <div className="mb-5 justify-center">
                         <Image src="/images/envelope.png" alt="envelope" width={70} height={70} />
                         </div>
@@ -54,14 +54,14 @@ const Confirm: React.FC = ( ) => {
                                 Ubah email
                             </button>
                         </div>            
-                    </div>
-                    <div className="flex justify-center mt-10">
-                        <button onClick={handleButtonToRegister} className="h-[37px] w-[400px] text-black font-bold">
-                            KEMBALI KE LAMAN SEBELUMNYA
-                        </button>
-                    </div>
+                </div>
+                <div className="flex justify-center mt-10">
+                    <button onClick={handleButtonToRegister} className="h-[37px] w-[400px] text-black font-bold">
+                        KEMBALI KE LAMAN SEBELUMNYA
+                    </button>
                 </div>
             </div>
+        </div>
     )
 }
 
